@@ -7,8 +7,8 @@ DATASETS:
   DETECT_CLASSES: ("Car", "Cyclist", "Pedestrian")
   TRAIN: ("kitti_train",)
   TEST: ("kitti_test",)
-  TRAIN_SPLIT: "train"
-  TEST_SPLIT: "val"
+  TRAIN_SPLIT: "trainval"
+  TEST_SPLIT: "test"
 SOLVER:
   BASE_LR: 2.5e-4
   STEPS: (5000, 10000, 18000, 20000, 21000, 22000, 23000, 24000)
