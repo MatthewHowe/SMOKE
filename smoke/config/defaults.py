@@ -161,7 +161,7 @@ _C.TEST.DETECTIONS_THRESHOLD = 0.25
 # Misc options
 # ---------------------------------------------------------------------------- #
 # Directory where output files are written
-_C.OUTPUT_DIR = "gs://aiml-reid-casr-data/smoke-output"
+_C.OUTPUT_DIR = "/checkpoints"
 # Set seed to negative to fully randomize everything.
 # Set seed to positive to use a fixed seed. Note that a fixed seed does not
 # guarantee fully deterministic behavior.
