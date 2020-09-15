@@ -92,14 +92,14 @@ def do_train(
                         "iter: {iter}",
                         "{meters}",
                         "lr: {lr:.8f}",
-                        "max men: {memory:.0f}",
+                        "memory_useage: {memory:.0f}",
                     ]
                 ).format(
                     eta=eta_string,
                     iter=iteration,
                     meters=str(meters),
                     lr=optimizer.param_groups[0]["lr"],
-                    memory=torch.cuda.max_memory_allocated() / 1024.0 / 1024.0
+                    memory=torch.cuda.memory_snapshot() / 1024.0 / 1024.0
                 )
             )
         # fixme: do we need checkpoint_period here
